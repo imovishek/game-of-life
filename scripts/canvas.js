@@ -1,11 +1,7 @@
 const canvas = document.querySelector('canvas');
 
 const Global = {
-  values: [
-    [1, 1, 1, 0],
-    [0, 1, 0, 1],
-    [1, 0, 1, 0],
-  ],
+  values: [[]],
   row: 100,
   col: 200,
   width: 6,
@@ -53,7 +49,7 @@ function init (numberOfIterations, seed) {
   }
 };
 
-init(2495, 136);
+init(1500, 134);
 
 function onButtonClick () {
   const seed = document.getElementById('randomseed').value;
