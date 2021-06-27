@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Life</title>
+  <style>
+    body {
+      margin: 0px;
+      background-color: white;
+    }
+    .form-wrapper {
+      display: grid;
+      grid-template-columns: 250px 250px 250px 250px 80px;
+    }
+    .btn {
+      cursor: pointer;
+    }
+    canvas {
+      position: center;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>Game Of Life</h1>
+  </div>
+  <div class="center">
+    <div class="form-wrapper">
+      <div>
+        <div>Rows</div>
+        <input type="number" id="rows" value="100" placeholder="Rows"/>
+      </div>
+      <div>
+        <div>Columns</div>
+        <input type="number" id="columns" value="200" placeholder="Columns"/>
+      </div>
+      <div>
+        <div>Initial iterations</div>
+        <input type="number" id="initialValues" value="1500" placeholder="Enter initial values"/>
+      </div>
+      <div>
+        <div>Random seed</div>
+        <input type="number" id="randomseed" value="134" placeholder="Random Seed"/>
+      </div>
+      <div>
+        <div>Let's do it</div>
+        <button class="btn" id="submitbtn" type="submit">Simulate</button>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div class="center">
+    <button class="btn" id="submitbtn2" type="submit">Simulate</button>
+  </div>
+  <script src="./scripts/canvas.js"></script>
+</body>
+</html>
